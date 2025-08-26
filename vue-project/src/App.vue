@@ -4,12 +4,14 @@ import Ex2_if from './components/Ex2_if.vue';
 import Ex3_show from './components/Ex3_show.vue';
 import Ex4_for from './components/Ex4_for.vue';
 import { ref } from 'vue';
+import Ex4_for_1 from './components/Ex4_for_1.vue';
 const activeComponent = ref('Ex1_bind');
 const pages = {
   Ex1_bind,
   Ex2_if,
   Ex3_show,
-  Ex4_for
+  Ex4_for,
+  Ex4_for_1
 };
 </script>
 
@@ -18,11 +20,14 @@ const pages = {
   <!-- <Ex2_if />
   <Ex3_show />
   <Ex4_for /> -->
+  <Ex4_for_1/>
+
+  
   <button @click="activeComponent = 'Ex1_bind'">bind_바인드</button>
   <button @click="activeComponent = 'Ex2_if'">if_이프</button>
   <button @click="activeComponent = 'Ex3_show'">Show_쇼우</button>
   <button @click="activeComponent = 'Ex4_for'">for_포</button>
-
+  <button @click="activeComponent = 'Ex4_for_1 '">for_포</button>
   <div id="comp_view">
     <keep-alive>
       <component :is="pages[activeComponent]"></component>
