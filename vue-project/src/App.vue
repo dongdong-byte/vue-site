@@ -20,7 +20,7 @@ const pages = {
   <!-- <Ex2_if />
   <Ex3_show />
   <Ex4_for /> -->
-  <Ex4_for_1/>
+  <!-- <Ex4_for_1/> -->
 
   
   <button @click="activeComponent = 'Ex1_bind'">bind_바인드</button>
