@@ -27,7 +27,7 @@ const pages = {
   <button @click="activeComponent = 'Ex2_if'">if_이프</button>
   <button @click="activeComponent = 'Ex3_show'">Show_쇼우</button>
   <button @click="activeComponent = 'Ex4_for'">for_포</button>
-  <button @click="activeComponent = 'Ex4_for_1 '">for_포-1</button>
+  <button @click="activeComponent = 'Ex4_for_1'">for_포-1</button>
   <div id="comp_view">
     <keep-alive>
       <component :is="pages[activeComponent]"></component>
