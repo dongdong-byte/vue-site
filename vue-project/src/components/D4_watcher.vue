@@ -1,7 +1,7 @@
 <template>
     <section class="sect">
-        <h2>Example: Range Watcher</h2>
-        <p> watcher is used for the 'rangeVal' value so that values between 20 and 60 are not possible to choose.</p>
+        <h2>예제: 범위 감시자</h2>
+        <p> watcher는 'rangeVal' 값에 사용되어 20과 60 사이의 값은 선택할 수 없도록 합니다.</p>
         <input v-model="rangeVal" type="range" min="0" max="100" step="5">
         <p>{{ rangeVal }}</p>
 

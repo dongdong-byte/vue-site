@@ -1,8 +1,7 @@
 <template>
     <section class="sect">
-        <h3>Example: Two-way Binding</h3>
-        <p>The inpText property is bound two ways: From the input element to the Vue property, and from the Vue property
-            to the input element.</p>
+        <h3>양방향 바인딩</h3>
+        <p>inpText 속성은 두 가지 방식으로 바인딩됩니다: 입력 요소에서 Vue 속성으로, 그리고 Vue 속성에서 입력 요소로.</p>
         <div class="div">
             <input type="text" v-model="inpText">
             <p>inpText :"{{ inpText }}"</p>
@@ -11,9 +10,8 @@
     <br><br>
 
     <section class="sect">
-        <h3>Example: Important Checkbox</h3>
-        <p>This 'important' checkbox is a dynamic form feature that will be added to a shoppinglist form later, but we
-            isolate it here first to easier see how it works.</p>
+        <h3>예제: 중요 체크박스</h3>
+        <p>이 '중요' 체크박스는 나중에 쇼핑리스트 양식에 추가될 동적 양식 기능입니다. 하지만 여기서는 작동 방식을 쉽게 볼 수 있도록 먼저 분리합니다.</p>
         <div>
             <form>
                 <p>
@@ -31,9 +29,8 @@
 
 
     <section class="sect">
-        <h3>Example: Shopping List With Important Items</h3>
-        <p>In this version of our shopping list the user can define if an item is important. The checkbox is more
-            dynamic because the 'true' or 'false' text changes to show the status when the user checks it.</p>
+        <h3>예제: 중요 아이템이 포함된 쇼핑 리스트</h3>
+        <p>이 쇼핑 리스트 버전에서는 사용자가 아이템이 중요한지 정의할 수 있습니다. 체크박스는 사용자가 체크할 때 상태를 보여주기 위해 'true' 또는 'false' 텍스트가 변경되므로 더 동적입니다.</p>
         <div>
             <form action="">
                 <p>무엇이 필요하나용?<br>

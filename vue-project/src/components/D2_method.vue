@@ -1,12 +1,12 @@
 <template>
     <section class="sect">
-        <h3>Example: Click to run a method</h3>
+        <h3>눌러서 method함수를 실행해보세요</h3>
         <div class="box" @click="changetxt">
             <p>{{ txt }}</p>
         </div>
     </section>
     <section class="sect">
-        <h3>Example: Mouse Pointer Position</h3>
+        <h3>마우스 포인터 위치 예제</h3>
         <div class="box" @mousemove="mousePos">
             <span>xPos{{ xPos }}</span><br>
             <span>yPos{{ yPos }}</span>
@@ -24,11 +24,12 @@
         </div>
     </section>
     <section   class="sect">
-        <h3>Example: Passing an Argument and the Event Object with a Method</h3>
+        <h3>method함수에 인자와 이벤트 객체 전달하기</h3>
+
 
         <div>
             <img id="tiger" :src="img_tiger" alt="호랑이사진" v-on:click="method($event, '안뇽ㅎㅎㅎ')">
-            <p>Here is the message sent with the method, and the id of the img tag:</p>
+            <p>여기서 이미지를 클릭하면 메세지가 출력됩니다.</p>
             <p>"{{ msgAndId }}"</P>
         </div>
 

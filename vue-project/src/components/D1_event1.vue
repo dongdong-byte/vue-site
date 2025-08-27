@@ -1,13 +1,13 @@
 <template>
     <section class="sect">
-        <h2>Example: Right Mouse Button Event</h2>
-        <p>Change the background color when a user right-clicks in the div element:</p>
+        <h2>오른쪽 버튼 클릭 이벤트</h2>
+        <p>사용자가 div 요소에서 오른쪽 클릭을 할 때 배경색을 변경합니다:</p>
         <div id="changebox" @click.right="changecolor" :style="{ backgroundColor: 'hsl(' + bgcolor + ', 80%, 80%)' }">
-            <p>Press right mouse button here.</p>
+            <p>여기서 오른쪽 마우스 버튼을 누르세요.</p>
         </div>
     </section>
     <section class="sect">
-        <h2>Click change Image</h2>
+        <h2>클릭해서 이미지를 바꿔보세요</h2>
         <p>오른쪽 버튼 하고 shift 버튼을 눌러서 꼬부기를 진화시켜 보세요.</p>
         <img @click.right.shift="changeImg" alt="포켓몬사진" v-bind:src="imgUrl">
     </section>
